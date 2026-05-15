@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMING STORE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>GAMING STORE</h1>
+        <nav>
+            <a href="#inicio" class="logo-link">
+        <img src="img/logo.png" alt="Gaming Store Logo" class="logo-img">
+    </a>
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#catalogo">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <main>
+       <section id="catalogo">
+    <h2>Equipamiento Gamer Profesional</h2>
+    
+    <div class="contenedor-productos">
+        <!-- Tarjeta 1 -->
+        <article class="producto">
+            <img src="img/teclado.png" alt="Teclado Gamer">
+            <h3>Teclado Gamer</h3>
+            <p class="precio">$15.000</p>
+            <button class="btn-comprar">Agregar al carrito</button>
+        </article>
+
+        <!-- Tarjeta 2 -->
+        <article class="producto">
+            <img src="img/mouse.png" alt="Mouse Gamer">
+            <h3>Mouse Óptico Pro</h3>
+            <p class="precio">$8.500</p>
+            <button class="btn-comprar">Agregar al carrito</button>
+        </article>
+
+        <!-- Tarjeta 3 -->
+        <article class="producto">
+            <img src="img/monitor.png" alt="Monitor Gamer">
+            <h3>Monitor Curvo</h3>
+            <p class="precio">$45.000</p>
+            <button class="btn-comprar">Agregar al carrito</button>
+        </article>
+
+        <!-- Tarjeta 4 -->
+        <article class="producto">
+            <img src="img/silla.png" alt="Silla Gamer">
+            <h3>Silla Ergonómica</h3>
+            <p class="precio">$60.000</p>
+            <button class="btn-comprar">Agregar al carrito</button>
+        </article>
+    </div>
+</section>
+        </section>
+
+        <section id="resenas">
+    <h2>Lo que dicen nuestros clientes</h2>
+    <div class="grid-resenas">
+        <article class="resena">
+            <p>"El teclado mecánico es una bomba. El RGB se ve increíble en la oscuridad."</p>
+            <span>- Juan Pérez</span>
+        </article>
+        <article class="resena">
+            <p>"Excelente atención. Me llegó el monitor al día siguiente, súper protegido."</p>
+            <span>- Sofía G.</span>
+        </article>
+        <article class="resena">
+            <p>"La silla es comodísima para pasar horas programando. Muy recomendable."</p>
+            <span>- Lucas Tech</span>
+        </article>
+        <article class="resena">
+            <p>"Calidad-precio insuperable. El mouse tiene una precisión bárbara."</p>
+            <span>- Martina_Gamer</span>
+        </article>
+    </div>
+</section>
+
+        <section id="contacto">
+    <h2>Escribinos</h2>
+    <form action="https://formspree.io/f/mwvyyapr" method="POST">
+    <input type="text" name="nombre" placeholder="Tu Nombre" required>
+    <input type="email" name="email" placeholder="Tu Email" required>
+    <textarea name="mensaje" placeholder="Tu consulta..."></textarea>
+    <button type="submit" class="btn-comprar">Enviar Mensaje</button>
+</form>
+</section>
+    </main>
+
+    <footer>
+    <p>GAMING STORE</p>
+    <div class="redes">
+        <span>Instagram</span> | <span>Twitter</span> | <span>Twitch</span>
+    </div>
+</footer>
+
+</body>
+</html>
