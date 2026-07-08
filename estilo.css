@@ -432,28 +432,22 @@ footer p {
 
 /* MENSAJE DEL CARRITO */
 
-#mensaje-carrito{
+#mensaje-carrito {
+    display: none;
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
     background: #00ffcc;
     color: #121212;
-    padding: 15px 25px;
-    border-radius: 8px;
+    padding: 10px;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    box-shadow: 0 4px 10px rgba(0,0,0,.3);
-
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .3s ease;
-
     z-index: 9999;
 }
 
-#mensaje-carrito.mostrar{
-    opacity: 1;
-    visibility: visible;
+#mensaje-carrito.mostrar {
+    display: block;
 }
 
-}
+
