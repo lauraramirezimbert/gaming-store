@@ -1,55 +1,70 @@
 body {
-    background-color: #121212; 
+    background-color: #121212;
     color: white;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Títulos y menú */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
 
 h1, h2, h3, nav a {
-    font-family: 'Orbitron', sans-serif; 
+    font-family: 'Orbitron', sans-serif;
     letter-spacing: 1px;
 }
 
+h2 {
+    text-align: center;
+    color: #00ffcc;
+    margin-bottom: 30px;
+}
+
+/* ==========================
+   HEADER
+========================== */
 
 header {
     background-color: #222;
     padding: 20px;
     text-align: center;
-    border-bottom: 2px solid #00ffcc; 
+    border-bottom: 2px solid #00ffcc;
 }
+
+/* ==========================
+   LOGO
+========================== */
 
 .logo-img {
-    
-    height: 50px;  
-    width: auto;   
-    display: block; 
+    height: 50px;
+    width: auto;
+    display: block;
 }
 
-/* NAV  */
+/* ==========================
+   NAVEGACIÓN
+========================== */
 
 nav {
-    display: flex;           
-    justify-content: space-between; 
-    align-items: center;    
-    padding: 10px 20px;      
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
 }
-
-
-
 
 nav ul {
-    list-style: none; 
-    padding: 0;
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    gap: 25px;
+    list-style: none;
     margin: 0;
-}
-
-nav li {
-    margin: 0 15px; 
+    padding: 0;
 }
 
 nav a {
@@ -64,15 +79,34 @@ nav a:hover {
     color: white;
 }
 
+/* ==========================
+   INICIO
+========================== */
+
+#inicio {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#inicio p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* ==========================
+   PRODUCTOS
+========================== */
 
 .contenedor-productos {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 40px 20px;
 }
 
-/* TARJETAS  */
 .producto {
     background-color: #1e1e1e;
     border: 1px solid #444;
@@ -80,20 +114,29 @@ nav a:hover {
     padding: 20px;
     width: 220px;
     text-align: center;
-    border-radius: 8px; 
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .producto img {
-    width: 100%; 
+    width: 100%;
     height: 180px;
-    object-fit: contain; 
+    object-fit: contain;
     background-color: #000;
 }
 
-/* BOTÓN DE COMPRA */
+.precio {
+    color: #00ffcc;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ==========================
+   BOTONES
+========================== */
+
 .btn-comprar {
     background-color: #00ffcc;
     color: #121212;
@@ -104,68 +147,74 @@ nav a:hover {
     font-weight: bold;
     margin-top: 10px;
     border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
 }
 
 .btn-comprar:hover {
-    background-color: #00ccaa; 
+    background-color: #00ccaa;
 }
 
+/* ==========================
+   FORMULARIO
+========================== */
 
-
-/* FORMULARIO */
 #contacto {
     background-color: #1e1e1e;
-    max-width: 400px; 
-    margin: 40px auto; 
+    max-width: 500px;
+    margin: 40px auto;
     padding: 30px;
     border-radius: 8px;
     border: 1px solid #444;
 }
 
 #contacto h2 {
-    text-align: center;
-    color: #00ffcc;
     margin-top: 0;
 }
 
 form {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
-input, textarea {
+input,
+textarea {
     background-color: #333;
     color: white;
     border: 1px solid #555;
-    padding: 10px;
-    margin-bottom: 15px; 
+    padding: 12px;
+    margin-bottom: 15px;
     border-radius: 4px;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
 
+/* ==========================
+   RESEÑAS
+========================== */
 
-
-
-
-/* RESEÑAS */
 #resenas {
     padding: 40px 20px;
 }
 
 .grid-resenas {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .resena {
     background-color: #252525;
     padding: 20px;
-    border-left: 4px solid #00ffcc; 
-    
+    border-left: 4px solid #00ffcc;
+    border-radius: 6px;
 }
 
 .resena p {
@@ -180,13 +229,140 @@ input, textarea {
     color: #00ffcc;
 }
 
-/* FOOTER */
+
+
+
+/* ==========================
+   INICIO / HERO
+========================== */
+
+#inicio {
+    margin: 50px auto;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.hero-texto {
+    flex: 1;
+}
+
+.hero-texto h2 {
+    font-size: 42px;
+    color: #00ffcc;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.hero-texto p {
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero-imagen {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-imagen img {
+    max-width: 100%;
+    width: 450px;
+}
+
+
+/* ==========================
+   BENEFICIOS
+========================== */
+
+#beneficios {
+    padding: 50px 20px;
+}
+
+.beneficios {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.beneficios article {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    border-radius: 8px;
+    width: 280px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.beneficios article:hover {
+    transform: translateY(-5px);
+}
+
+.beneficios h3 {
+    color: #00ffcc;
+    margin-bottom: 15px;
+}
+
+.beneficios p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+
+/* ==========================
+   CARRITO
+========================== */
+
+#lista-carrito {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+#lista-carrito li {
+    background: #1e1e1e;
+    border: 1px solid #444;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#total {
+    text-align: center;
+    color: #00ffcc;
+    font-size: 24px;
+    margin: 30px 0;
+}
+
+.carrito-vacio {
+    text-align: center;
+    color: #bbb;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
 footer {
     background-color: #000;
-    color: #888; 
+    color: #888;
     text-align: center;
     padding: 30px;
-    margin-top: 50px; 
+    margin-top: 50px;
     border-top: 1px solid #444;
     font-size: 14px;
 }
@@ -197,21 +373,87 @@ footer p {
 
 .redes {
     margin-top: 10px;
-    color: #00ffcc; 
+    color: #00ffcc;
     font-weight: bold;
 }
 
-/* MEDIA QUERY */
+/* ==========================
+   RESPONSIVE
+========================== */
+
 @media (max-width: 600px) {
-    .producto {
-        width: 85%; 
-    }
-    
+
     nav {
-        display: flex;
-        flex-direction: column; 
-        gap: 10px;
+        flex-direction: column;
+        gap: 15px;
     }
 
-   
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .grid-resenas {
+        grid-template-columns: 1fr;
+    }
+
+    .producto {
+        width: 85%;
+    }
+
+    #contacto {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .hero {
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-texto h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.hero-imagen img {
+    width: 280px;
+}
+
+.beneficios {
+    flex-direction: column;
+    align-items: center;
+}
+
+.beneficios article {
+    width: 90%;
+}
+
+/* MENSAJE DEL CARRITO */
+
+#mensaje-carrito{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #00ffcc;
+    color: #121212;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 10px rgba(0,0,0,.3);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease;
+
+    z-index: 9999;
+}
+
+#mensaje-carrito.mostrar{
+    opacity: 1;
+    visibility: visible;
+}
+
 }
