@@ -1,5 +1,5 @@
 
-#1. Estructura del sitio (HTML)
+# 1. Estructura del sitio (HTML)
 
 En la primera versión tenía una sola página con enlaces internos. En esta entrega separé el proyecto en cuatro páginas distintas: Inicio, Productos, Contacto y Carrito. De esta manera el menú navega entre archivos HTML y la estructura quedó más ordenada.
 
