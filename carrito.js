@@ -19,13 +19,13 @@ function mostrarMensaje(texto) {
     if (!mensaje) return;
 
     mensaje.textContent = texto;
-    mensaje.classList.add("mostrar");
+mensaje.classList.add("mostrar");
 
-    clearTimeout(mensaje.timeout);
+clearTimeout(mensaje.timeout);
 
-    mensaje.timeout = setTimeout(function () {
-        mensaje.classList.remove("mostrar");
-    }, 2000);
+mensaje.timeout = setTimeout(function () {
+    mensaje.classList.remove("mostrar");
+}, 5000);
 }
 
 function mostrarCarrito() {
