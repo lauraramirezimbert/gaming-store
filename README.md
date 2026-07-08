@@ -1,48 +1,84 @@
-## 1. El inicio y la estructura (HTML)
-Empecé armando el esqueleto de la página, usé las etiquetas **header, nav, section y footer** para que el código esté ordenado. En el menú de navegación usé una lista ul con enlaces internos ID para que se pueda viajar por la página sin recargar.
-Usé **article** para los productos y las reseñas.
 
-## 2. La tipografía.
+1. Estructura del sitio (HTML)
+
+En la primera versión tenía una sola página con enlaces internos. En esta entrega separé el proyecto en cuatro páginas distintas: Inicio, Productos, Contacto y Carrito. De esta manera el menú navega entre archivos HTML y la estructura quedó más ordenada.
+
+En todas las páginas mantuve el mismo header y el mismo footer para que el diseño sea uniforme.
+
+2. El inicio
+
+El inicio había quedado muy vacío porque solamente tenía las reseñas, así que agregué una sección de bienvenida con un texto de presentación y un botón para ir directamente a Productos.
+
+También agregué una sección con tres beneficios de la tienda (productos premium, envíos rápidos y pago seguro) para que la página principal tenga más contenido.
+
+3. Tipografía
+
 Usé dos fuentes para diferenciar el texto general de los títulos y el menú.
-En la fuente Orbitron le agregué un **letter-spacing** de 1px para que se entienda mejor porque quedaban muy pegadas.
 
-## 3.Colores y Nav
-Usé la combinación de un fondo casi negro y un verde agua. Usé Flexbox para que el logo se quede a la izquierda y el menú a la derecha con **justify-content: space-between**
-Agregué un hover en los títulos de las secciones para que cuando acercamos el mouse se ponga blanco.
-Agregué una linea de color para separar el menú de la sección de productos.
+En la fuente Orbitron le agregué un letter-spacing de 1px porque me parecía que las letras quedaban muy juntas y así se leen mejor.
 
+4. Colores y navegación
 
-## 4. Los productos y las reseñas
-Para la parte de los productos, le pedí a Gemini que me genere las imagenes porque quería que se vean más o menos uniformes todos los productos. 
-Usé tarjetas con las imágenes y precios. 
-A las tarjetas les centré el texto y le redondeé un poco los bordes.
+Mantuve la combinación de un fondo oscuro con detalles en verde agua para darle una estética gamer.
 
-Tuve que buscar información sobre cómo hacer que las fotos se vean enteras y que no se deformen y probé con **objet-fit: contain** y un background-color negro, es la manera que me resultó porque sino se estiraban mucho las imagenes.
+Usé Flexbox para que el logo quede a la izquierda y el menú a la derecha utilizando justify-content: space-between.
 
-En el de "mouse óptico pro" tenía un problema con el botón de agregar al carrito, no lo podía alinear con el resto y usé display flex para que se ordene y flex direction column para que cada elemento de cada tarjeta se pongan uno abajo del otro.
+En todas las páginas mantuve el mismo menú para que el usuario pueda navegar fácilmente entre Inicio, Productos, Contacto y Carrito.
 
-En el botón de compra le puse un hover para que se oscurezca al mover el mouse.
+5. Productos
 
+Para las imágenes de los productos le pedí a Gemini que genere imágenes similares para que todas mantengan el mismo estilo.
 
-## 5. El logo.
-Le pedí a Gemini que me genere un logo para la tienda y fui adaptandolo en tamaño en css, me parece que sigue estando muy chico pero si lo dejo mas grande tampoco me convence. También le puse un ID al logo para poder hacerle click.
+Utilicé tarjetas con imagen, nombre, precio y un botón para agregar al carrito.
 
-## 6. Formulario
-Centré el formulario y puse un campo arriba del otro y le agregué un espacio entre cada campo de 15px.
-Utilicé **Formspree** para que las consultas lleguen al mail.
+Las imágenes me daban problemas porque algunas se deformaban. Después de buscar información utilicé object-fit: contain con un fondo negro y fue la opción que mejor resultado me dio.
 
+En las tarjetas usé Flexbox para acomodar los elementos uno debajo del otro y lograr que todos los botones queden alineados.
 
-## 7. Reseñas
-Para las reseñas de los clientes, usé CSS Grid. Armé dos columnas de igual tamaño, en este caso tuve que buscar información para poder hacerlo porque no me salía con px y la información que encontré fue usar **grid-template-columns: 1fr 1fr** para que me los divida en dos partes iguales y que se adapte al espacio disponible.
-Los textos de las reseñas se los pedí a Gemini.
-Le agregué la línea de color en la izquierda a cada reseña con border-left y al texto de las reseñas le puse letra itálica para que se vea como si fuera un comentario.
-Y los nombres de los clientes los agregué con span los puse del mismo color verde agua que vengo manejando en la página y en bold para que resalten.
+También agregué un pequeño efecto al pasar el mouse sobre los productos para que el sitio tenga un poco más de interacción.
 
+6. Carrito (JavaScript)
 
-## 8.Footer
-Puse el texto alineado en el centro.
-Le puse un margin-top para que no quede tan pegado al formulario con una línea muy finita para separarlo con border-top y agregue las redes con el mismo verde agua de toda la web.
+En esta entrega incorporé JavaScript para agregar un carrito de compras.
 
-## 9. Media Queries
-Hice que en pantallas chicas el menú y el logo se pongan uno arriba del otro y que los productos midan un 85% del ancho para que haya un margen y no quede tan amontonado.
-Usé gap para que los elementos del menú no queden tan pegados al logo al ponerse en columna.
+Cada vez que el usuario hace clic en "Agregar al carrito", el producto se guarda utilizando localStorage, por lo que si se cambia de página o se actualiza el navegador el carrito sigue conservando los productos.
+
+En la página del carrito se muestran todos los productos agregados, el total de la compra y un botón para vaciar el carrito.
+
+También agregué un mensaje que aparece durante unos segundos cuando se agrega un producto al carrito para darle una mejor experiencia al usuario.
+
+7. Formulario
+
+Centré el formulario y acomodé todos los campos uno debajo del otro utilizando Flexbox.
+
+Utilicé Formspree para que las consultas enviadas desde el formulario lleguen directamente a mi correo electrónico.
+
+8. Reseñas
+
+Para las reseñas utilicé CSS Grid.
+
+Después de buscar información encontré que utilizando grid-template-columns: 1fr 1fr podía dividir el espacio en dos columnas iguales y adaptarlo al tamaño de la pantalla.
+
+Los textos de las reseñas fueron generados con ayuda de Gemini.
+
+A cada reseña le agregué una línea verde a la izquierda utilizando border-left y los nombres de los clientes los destaqué con un color verde agua y negrita.
+
+9. Logo
+
+El logo también fue generado con ayuda de Gemini.
+
+Después fui ajustando su tamaño mediante CSS hasta encontrar una medida que se integrara bien con el menú de navegación.
+
+10. Footer
+
+El footer se mantuvo igual en todas las páginas.
+
+Alineé el contenido al centro, agregué una línea superior para separarlo del contenido principal y mantuve los colores de la identidad visual de la página.
+
+11. Responsive
+
+Utilicé Media Queries para adaptar la página a pantallas más pequeñas.
+
+En celulares el menú pasa a mostrarse en columna, las tarjetas de productos ocupan un mayor porcentaje del ancho disponible y las reseñas pasan de dos columnas a una sola para facilitar la lectura.
+
+También adapté la nueva sección de bienvenida y la de beneficios para que se acomoden correctamente en dispositivos móviles.

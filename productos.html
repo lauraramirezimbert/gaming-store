@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMING STORE</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+<header>
+    <h1>GAMING STORE</h1>
+
+    <nav>
+        <a href="index.html" class="logo-link">
+            <img src="img/logo.png" alt="Gaming Store Logo" class="logo-img">
+        </a>
+
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="carrito.html">🛒 Carrito</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<div id="mensaje-carrito"></div>
+
+<main>
+
+<section id="catalogo">
+
+    <h2>Equipamiento Gamer Profesional</h2>
+
+    <div class="contenedor-productos">
+
+        <article class="producto">
+            <img src="img/teclado.png" alt="Teclado Gamer">
+            <h3>Teclado Gamer</h3>
+            <p class="precio">$15.000</p>
+            <button class="btn-comprar" onclick="agregarCarrito('Teclado Gamer',15000)">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <article class="producto">
+            <img src="img/mouse.png" alt="Mouse Gamer">
+            <h3>Mouse Óptico Pro</h3>
+            <p class="precio">$8.500</p>
+            <button class="btn-comprar" onclick="agregarCarrito('Mouse Óptico Pro',8500)">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <article class="producto">
+            <img src="img/monitor.png" alt="Monitor Gamer">
+            <h3>Monitor Curvo</h3>
+            <p class="precio">$45.000</p>
+            <button class="btn-comprar" onclick="agregarCarrito('Monitor Curvo',45000)">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <article class="producto">
+            <img src="img/silla.png" alt="Silla Gamer">
+            <h3>Silla Ergonómica</h3>
+            <p class="precio">$60.000</p>
+            <button class="btn-comprar" onclick="agregarCarrito('Silla Ergonómica',60000)">
+                Agregar al carrito
+            </button>
+        </article>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    <p>GAMING STORE</p>
+
+    <div class="redes">
+        <span>Instagram</span> |
+        <span>Twitter</span> |
+        <span>Twitch</span>
+    </div>
+</footer>
+
+<script src="carrito.js"></script>
+
+</body>
+</html>

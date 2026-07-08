@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMING STORE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+<header>
+    <h1>GAMING STORE</h1>
+
+    <nav>
+        <a href="index.html" class="logo-link">
+            <img src="img/logo.png" alt="Gaming Store Logo" class="logo-img">
+        </a>
+
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="carrito.html">🛒 Carrito</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+
+<h2>Mi carrito</h2>
+
+<ul id="lista-carrito"></ul>
+
+<h3 id="total"></h3>
+
+<button class="btn-comprar" onclick="vaciarCarrito()">
+Vaciar carrito
+</button>
+
+</main>
+
+<script src="carrito.js"></script>
+
+
+<footer>
+    <p>GAMING STORE</p>
+
+    <div class="redes">
+        <span>Instagram</span> |
+        <span>Twitter</span> |
+        <span>Twitch</span>
+    </div>
+</footer>
+
+    
+</body>
+</html>
