@@ -377,6 +377,29 @@ footer p {
     font-weight: bold;
 }
 
+
+
+/* MENSAJE DEL CARRITO */
+
+#mensaje-carrito {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: #00ffcc;
+    color: #121212;
+    padding: 10px;
+    font-weight: bold;
+    z-index: 9999;
+}
+
+#mensaje-carrito.mostrar {
+    display: block;
+}
+
+
 /* ==========================
    RESPONSIVE
 ========================== */
@@ -430,24 +453,6 @@ footer p {
     width: 90%;
 }
 
-/* MENSAJE DEL CARRITO */
 
-#mensaje-carrito {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    background: #00ffcc;
-    color: #121212;
-    padding: 10px;
-    font-weight: bold;
-    z-index: 9999;
-}
-
-#mensaje-carrito.mostrar {
-    display: block;
-}
 
 
